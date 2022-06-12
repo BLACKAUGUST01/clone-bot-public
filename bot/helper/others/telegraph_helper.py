@@ -77,11 +77,11 @@ class TelegraphHelper:
                     content += f'<b> | <a href="https://telegra.ph/{path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             self.edit_page(
-                path=path[prev_page], title="Mirror-leech-bot  Search", content=content
+                path=path[prev_page], title="WOLF Cloud ☁️ Search", content=content
             )
         return
 
 
 telegraph = TelegraphHelper(
-    "Mirror-Leech-Telegram-Bot", "https://github.com/anasty17/mirror-leech-telegram-bot"
+    "Wolf Cloud ☁️", "https://t.me/Wolf_Cloud"
 )
