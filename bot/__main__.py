@@ -109,9 +109,9 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton(
-        "Repo", "https://www.github.com/yashoswalyo/clone-bot-public"
+        "Channel", "https://t.me/Wolf_Cloud"
     )
-    buttons.buildbutton("Report Group", "https://t.me/yash_codes_support")
+    buttons.buildbutton("Project 📽", "https://t.me/WolfBots")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f"""
@@ -121,7 +121,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
         sendMarkup(
-            "Not Authorized user, deploy your own clone bot",
+            "Not Authorized user, join channel for using Wolf Cloud ☁️ clone bot",
             context.bot,
             update.message,
             reply_markup,
